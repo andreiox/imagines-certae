@@ -1,0 +1,7 @@
+{
+  "name": "imagines-certae",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
