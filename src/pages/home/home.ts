@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 
 import { GridsterConfig, GridsterItem } from 'angular-gridster2';
 
@@ -9,42 +9,45 @@ import { GridsterConfig, GridsterItem } from 'angular-gridster2';
 })
 export class HomePage {
 
+  constructor(private navCtrl: NavController, private alertCtrl: AlertController) {
+
+  }
+
   options = {
-    itemChangeCallback: HomePage.itemChange,
-    itemResizeCallback: HomePage.itemResize,
     mobileBreakpoint: 0,
-    defaultItemCols: 3,
-    defaultItemRows: 3,
+    defaultItemCols: 5,
+    defaultItemRows: 5,
+    // pushItems: false,
+    // swap: false,
+    draggable: {
+      delayStart: 300,
+      enabled: true,
+      // dropOverItems: true,
+      // dropOverItemsCallback: this.presentAlert
+    },
+    resizable: {
+      enabled: true,
+    }
   }
 
   dashboard = [
-    { cols: 3, rows: 1, y: 0, x: 0, dragEnabled: true, },
-    { cols: 3, rows: 1, y: 1, x: 0, dragEnabled: true, },
-    { cols: 3, rows: 1, y: 2, x: 0, dragEnabled: true, },
+    { cols: 5, rows: 1, y: 0, x: 0 },
+    { cols: 3, rows: 1, y: 1, x: 1 },
+    { cols: 1, rows: 1, y: 2, x: 1 },
+    { cols: 1, rows: 1, y: 2, x: 2 },
+    { cols: 1, rows: 1, y: 2, x: 3 },
+    { cols: 3, rows: 1, y: 3, x: 1 },
+    { cols: 5, rows: 1, y: 4, x: 0 },
   ]
 
-  static itemChange(item, itemComponent) {
-    console.info('itemChanged', item, itemComponent);
-  }
-
-  static itemResize(item, itemComponent) {
-    console.info('itemResized', item, itemComponent);
-  }
-
-  changedOptions() {
-    console.log('options changed')
-  }
-
-  removeItem(item) {
-    this.dashboard.splice(this.dashboard.indexOf(item), 1);
-  }
-
-  addItem() {
-    console.log('addItem')
-  }
-
-  constructor(public navCtrl: NavController) {
-
+  presentAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Low battery',
+      subTitle: '10% of battery remaining',
+      buttons: ['Dismiss']
+    });
+    alert.present();
+    
   }
 
 }
