@@ -8,6 +8,8 @@ Links IONIC
 - https://www.joshmorony.com/how-to-create-a-sliding-drawer-component-for-ionic-2/
 - https://www.joshmorony.com/create-a-directive-to-focus-content-in-a-list-with-3d-touch/
 - https://www.joshmorony.com/creating-an-animated-splash-screen-in-ionic/
+- https://github.com/jdnichollsc/Ionic-Starter-Template (animaçao de entrada)
+- https://github.com/jdnichollsc/Ionic-ElastiChat-with-Images (chat interaçoes com imagens)
 
 
 Links Angular
