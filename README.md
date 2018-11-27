@@ -1,5 +1,13 @@
 # imagines-certae
 
+ROADMAP
+- Botão para adicionar roles
+- Botão para deletar os roles
+- Adicionar algo dentro dos roles
+- Subir com a navbar para o usuario tirar aquele print esperto ou exporta a imagem
+
+
+
 Links IONIC
 
 - https://www.joshmorony.com/building-an-absolute-drag-directive-in-ionic-2/ (drag and drop sem grid)

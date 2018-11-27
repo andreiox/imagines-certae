@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 import { GridsterConfig, GridsterItem } from 'angular-gridster2';
 
@@ -9,21 +9,21 @@ import { GridsterConfig, GridsterItem } from 'angular-gridster2';
 })
 export class HomePage {
 
-  constructor(private navCtrl: NavController, private alertCtrl: AlertController) {
+  customOptions = {}
 
+  constructor(private navCtrl: NavController) {
+    this.customOptions = {
+      displayRemoveButton: false,
+    }
   }
 
   options = {
     mobileBreakpoint: 0,
     defaultItemCols: 5,
     defaultItemRows: 5,
-    // pushItems: false,
-    // swap: false,
     draggable: {
       delayStart: 300,
       enabled: true,
-      // dropOverItems: true,
-      // dropOverItemsCallback: this.presentAlert
     },
     resizable: {
       enabled: true,
@@ -40,14 +40,18 @@ export class HomePage {
     { cols: 5, rows: 1, y: 4, x: 0 },
   ]
 
-  presentAlert() {
-    let alert = this.alertCtrl.create({
-      title: 'Low battery',
-      subTitle: '10% of battery remaining',
-      buttons: ['Dismiss']
-    });
-    alert.present();
-    
+  removeItem($event, item) {
+    $event.preventDefault();
+    $event.stopPropagation();
+    this.dashboard.splice(this.dashboard.indexOf(item), 1);
+  }
+
+  addItem() {
+    this.dashboard.push({ x: 0, y: 0, cols: 1, rows: 1 });
+  }
+
+  toggleRemoveButton() {
+    this.customOptions['displayRemoveButton'] = !this.customOptions['displayRemoveButton']
   }
 
 }
