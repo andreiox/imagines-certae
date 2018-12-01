@@ -25674,7 +25674,7 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-page-home button-holder {
+page-home .div-item {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -25694,4 +25694,34 @@ page-home button-holder {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+page-home .div-apply-background {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+page-home .div-preview-background {
+  width: 50px;
+  height: 40px;
+  margin: 15px;
+  display: inline-block;
 }

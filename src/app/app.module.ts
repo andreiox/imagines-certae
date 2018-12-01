@@ -3,7 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { HomePage, ModalContentPage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -16,6 +16,7 @@ import { GridsterModule } from 'angular-gridster2';
     MyApp,
     HomePage,
     ListPage,
+    ModalContentPage,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +27,8 @@ import { GridsterModule } from 'angular-gridster2';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    ModalContentPage
   ],
   providers: [
     StatusBar,
