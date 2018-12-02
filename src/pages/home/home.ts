@@ -4,14 +4,6 @@ import { ModalController, NavParams, ViewController } from 'ionic-angular';
 import { GridsterItem } from 'angular-gridster2';
 
 
-import { ActionSheetController, ToastController, Platform, LoadingController, Loading } from 'ionic-angular';
-import { File } from '@ionic-native/file';
-import { Transfer, TransferObject } from '@ionic-native/transfer';
-import { FilePath } from '@ionic-native/file-path';
-import { Camera } from '@ionic-native/camera';
-declare var cordova: any;
-
-
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
