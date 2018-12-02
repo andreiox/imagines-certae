@@ -11,6 +11,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { GridsterModule } from 'angular-gridster2';
 
+import { File } from '@ionic-native/file';
+import { Transfer } from '@ionic-native/transfer';
+import { FilePath } from '@ionic-native/file-path';
+import { Camera } from '@ionic-native/camera';
+
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -33,6 +40,10 @@ import { GridsterModule } from 'angular-gridster2';
   providers: [
     StatusBar,
     SplashScreen,
+    File,
+    Transfer,
+    Camera,
+    FilePath,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
