@@ -1,4 +1,4 @@
-# imagines-certae
+﻿# imagines-certae
 
 ROADMAP
 - Botão para adicionar roles (pronto só falta estilizar)
@@ -25,3 +25,5 @@ Links Angular
 
 - https://github.com/swiety85/angular2gridster (foda, puta que pariu é isso aqui)
 - https://github.com/ManifestWebDesign/angular-gridster (foda, puta que pariu é isso aqui também)
+
+Opa
