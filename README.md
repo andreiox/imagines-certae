@@ -1,10 +1,14 @@
 ﻿# imagines-certae
 
 ROADMAP
-- Botão para adicionar roles (pronto só falta estilizar)
-- Botão para deletar os roles (pronto só falta estilizar)
-- Adicionar algo dentro dos roles
-- Subir com a navbar para o usuario tirar aquele print esperto ou exporta a imagem
+- Botão para adicionar roles (DONE)
+- Botão para deletar os roles (DONE)
+- Mudar background-color dos itens (DONE)
+- Colocar imagem como background dos itens
+- Exportar prototipo via screenshot (DONE)
+- Adicionar splashscreen
+- Adicionar página sobre
+- Estilizar melhor o menu lateral
 
 
 
@@ -25,5 +29,3 @@ Links Angular
 
 - https://github.com/swiety85/angular2gridster (foda, puta que pariu é isso aqui)
 - https://github.com/ManifestWebDesign/angular-gridster (foda, puta que pariu é isso aqui também)
-
-Opa
