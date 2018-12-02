@@ -18,7 +18,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <gridster [options]="options">
     <gridster-item [item]="item" *ngFor="let item of dashboard">
       <div [ngStyle]="{ 'background': item.background }" class="div-item">
@@ -36,16 +36,3 @@
   </gridster>
 
 </ion-content>
-
-<ion-footer>
-  <ion-toolbar color="primary">
-    <ion-buttons>
-      <button ion-button icon-left (click)="presentActionSheet()">
-        <ion-icon name="camera"></ion-icon>Select Image
-      </button>
-      <button ion-button icon-left (click)="uploadImage()" [disabled]="lastImage === null">
-        <ion-icon name="cloud-upload"></ion-icon>Upload
-      </button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-footer>

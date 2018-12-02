@@ -7,6 +7,7 @@ import { HomePage, ModalContentPage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
+import { Screenshot } from '@ionic-native/screenshot';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { GridsterModule } from 'angular-gridster2';
@@ -39,6 +40,7 @@ import { Camera } from '@ionic-native/camera';
   ],
   providers: [
     StatusBar,
+    Screenshot,
     SplashScreen,
     File,
     Transfer,
