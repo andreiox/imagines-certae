@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>imagines-certae</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <name>Imagines Certae</name>
+    <description>Prototipação mobile made easy.</description>
+    <author email="ioxsin1@gmail.com" href="http://github.com/andreiox">Andre Macedo e Jardel Augusto</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -84,4 +84,5 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="com.darktalker.cordova.screenshot" spec="0.1.6" />
+    <engine name="android" spec="7.1.4" />
 </widget>

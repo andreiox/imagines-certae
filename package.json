@@ -1,8 +1,8 @@
 {
   "name": "imagines-certae",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Andre Macedo e Jardel Augusto",
+  "homepage": "https://github.com/andreiox/imagines-certae",
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",
@@ -30,7 +30,14 @@
     "@ionic-native/transfer": "^3.14.0",
     "@ionic/storage": "2.2.0",
     "angular-gridster2": "^7.0.0",
-    "com.darktalker.cordova.screenshot": "0.1.6",
+    "com.darktalker.cordova.screenshot": "^0.1.6",
+    "cordova-android": "7.1.4",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-ionic-keyboard": "^2.1.3",
+    "cordova-plugin-ionic-webview": "^2.2.5",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-whitelist": "^1.3.3",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
     "rxjs": "5.5.11",
@@ -42,10 +49,21 @@
     "@ionic/lab": "1.0.13",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project",
+  "description": "Prototipação mobile made easy.",
   "cordova": {
     "plugins": {
-      "com.darktalker.cordova.screenshot": {}
-    }
+      "com.darktalker.cordova.screenshot": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "android"
+    ]
   }
 }
