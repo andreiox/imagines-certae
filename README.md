@@ -1,31 +1,18 @@
 ﻿# imagines-certae
 
-ROADMAP
-- Botão para adicionar roles (DONE)
-- Botão para deletar os roles (DONE)
-- Mudar background-color dos itens (DONE)
-- Colocar imagem como background dos itens
-- Exportar prototipo via screenshot (DONE)
-- Adicionar splashscreen
-- Adicionar página sobre
-- Estilizar melhor o menu lateral
+imagines-certae it's an app that focus in help developers prototype their apps with ease.
 
 
+### Instalation
 
-Links IONIC
+```shell
+npm install
+```
 
-- https://github.com/tiberiuzuld/angular-gridster2/ (essa é a base)
-- https://www.joshmorony.com/building-an-absolute-drag-directive-in-ionic-2/ (drag and drop sem grid)
-- https://valor-software.com/ng2-dragula/index.html (drag and drop list items and list)
-- https://codequs.com/p/HJs4NKZx5/create-drag-and-drop-with-ionic-2 (drag and drop list items)
-- https://www.joshmorony.com/how-to-create-a-sliding-drawer-component-for-ionic-2/
-- https://www.joshmorony.com/create-a-directive-to-focus-content-in-a-list-with-3d-touch/
-- https://www.joshmorony.com/creating-an-animated-splash-screen-in-ionic/
-- https://github.com/jdnichollsc/Ionic-Starter-Template (animaçao de entrada)
-- https://github.com/jdnichollsc/Ionic-ElastiChat-with-Images (chat interaçoes com imagens)
+### How to test
 
+```shell
+ionic serve
+```
 
-Links Angular
-
-- https://github.com/swiety85/angular2gridster (foda, puta que pariu é isso aqui)
-- https://github.com/ManifestWebDesign/angular-gridster (foda, puta que pariu é isso aqui também)
+Than go to http://127.0.0.1:8100
